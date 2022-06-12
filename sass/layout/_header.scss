@@ -1,0 +1,145 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+
+.header__container {
+    display: flex;
+}
+
+/* WebStudio */
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.header__logo {
+    margin-right: 84px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo__style {
+    color: var(--accent-color);
+}
+
+.logo--dark {
+    color: var(--title-text-color);
+}
+
+
+.logo:hover {
+    color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*nav*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.site-nav,
+.contakt {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav li:not(:last-child),
+.contakt li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contakt {
+    align-items: center;
+    margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav__link {
+    color: var(--title-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.site-nav__link.current {
+    color: var(--accent-color);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: var(--accent-color);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contakt a {
+    display: flex;
+    color: var(--contakt-color);
+    align-items: center;
+}
+
+.container .contakt a:hover,
+.contakt a:focus {
+    color: var(--accent-color);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contakt__icon-mail,
+.contakt__icon-tel {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contakt__icon-mail:hover,
+.contakt__icon-tel:hover {
+    color: var(--accent-color);
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.site-nav__link {
+    display: block;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1.5px;
+    opacity: 1;
+    transition-property: transform background opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scaleX(1);
+}
