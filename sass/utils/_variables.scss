@@ -1,12 +1,35 @@
+:root {
+    --title-text-color: #212121;
+    --common-text-color: #757575;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
+    --main-color: #e5e5e5;
+    --home-color: #2f303a;
+    --contakt-color: #757575;
+    --fon-color: #f5f4fa;
+    --icon-color: #AFB1B8;
+    --card-set-gap: 30px;
+}
+@mixin font-text ($fs, $fw, $lh, $ls) {
+    font-size: $fs; 
+    font-weight: $fw; 
+    line-height: $lh; 
+    letter-spacing: $ls;}
+    
+}
+body {
+    @include font-text(14px, null, nuull, 0.03);
+    font-family: 'Roboto', sans-serif;
+    color: var(--common-text-color);
+    background: var(--white-color);
+}
+
 .hero__title {
     width: 696px;
     margin: 0 auto;
     color: var(--white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font-text(44px, 900, 1.36, 0.06);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -16,64 +39,52 @@
     margin-right: auto;
     margin-bottom: 50px;
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font-text(36px, 700, 1.16, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
-}
+    }
+
 .about__text {
     position: absolute;
     display: flex;
     z-index: 1;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14px;
+    @include font-text(14px, 700, 1.14, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
 }
+
 .details__title {
     width: 270px;
     height: 16px;
     margin-bottom: 10px;
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font-text(14px, 700, 1.14, 0.03);
     text-transform: uppercase;
 }
+
 .team__title,
 .clients__title {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font-text(36px, 700, 1.16, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
 }
+
 .master__person {
     margin-bottom: 10px;
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font-text(16px, 500, 1.18, 0.03);
     text-align: center;
-    letter-spacing: 0.03em;
 }
+
 .footer__contacts {
     margin-top: 20px;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font-text(14px, null, 1.71, 0.03);
 }
 
 .social__text,
@@ -81,9 +92,6 @@
     font-family: 'Roboto', sans-serif;
     color: var(--white-color);
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font-text(14px, 700, 1.14, 0.03);
     text-transform: uppercase;
 }

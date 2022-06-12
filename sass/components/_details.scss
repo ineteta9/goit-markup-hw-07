@@ -9,11 +9,10 @@
 .details__list {
     display: flex;
     flex-wrap: wrap;
-}
-
-.details__item {
-    width: 270px;
-    padding: 0;
+    .details__item {
+            width: 270px;
+            padding: 0;
+        }
 }
 
 .details__item:not(:last-child) {
@@ -25,14 +24,11 @@
     height: 120px;
     background: var(--fon-color);
     margin-bottom: var(--card-set-gap);
-    display: flex;
+    @extend %align-list;
     justify-content: center;
-    align-items: center;
-}
-
-.details__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
+    .details__icon {
+            @extend %align-list;
+            justify-content: center;
+            background-repeat: no-repeat;
+        }
 }

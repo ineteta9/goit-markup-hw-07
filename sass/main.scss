@@ -1,17 +1,22 @@
-@import "./utils/vars";
-@import "./component/common";
-@import "./component/options-text";
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
 
-@import "./modal";
 
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/details";
-@import "./layout/about";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/footer";
-@import "./layout/footer-connect";
+@import "./modal/backdrop";
+@import "./modal/modal-input";
+@import "./modal/checkbox";
+@import "./modal/btn-modal";
 
-@import "./layout/portf-button";
-@import "./layout/portf-gallery";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/details";
+@import "./components/about";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/footer-connect";
+
+@import "./components/portf-button";
+@import "./components/portf-gallery";
